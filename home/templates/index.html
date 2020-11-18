@@ -1,0 +1,217 @@
+{% extends 'base.html' %}
+{% block title %} CodeSmashers
+    {% endblock title %}
+{% block homeactive %}
+active
+{% endblock homeactive %}
+    {% block body %}
+    {% load static %}
+     
+       <section class="container text-center my-5 py-4">
+    <h1>SKILLS</h1>
+    <p>These are some of my skills i had learned so far.But i am still because <br> learning is the process which never
+      ends!!</p>
+
+    <div class="row rowsetting">
+      <div class="col-lg-4 col-md-4 col-10 d-block m-auto">
+        <div class="imgsetting d-block m-auto">
+          <img src="{{baseurl}}/C++.png" class="img-fluid">
+        </div>
+        <h2 class="mt-3">C,C++</h2>
+        <p>Well we all know the importane of C and C++ although its very old but it is still in use which implies its
+          importance</p>
+      </div>
+      <div class="col-lg-4 col-md-4 col-10 d-block m-auto">
+        <div class="imgsetting d-block m-auto">
+          <img src="{{baseurl}}/webd.png" class="img-fluid" style="width: 20vh;height: 15vh;">
+        </div>
+        <h2 class="mt-3">Html,Css,Js</h2>
+        <p>It is the basic building block of Web Development every person should know the basics of html,css,and js</p>
+      </div>
+
+      <div class="col-lg-4 col-md-4 col-10 d-block m-auto">
+        <div class="imgsetting d-block m-auto">
+          <img src="{{baseurl}}/python.jpg" class="img-fluid">
+        </div>
+        <h2 class="mt-3">Python</h2>
+        <p>Python is nowdays one of the most popular programming language used in many fields like web D , coding, ML ,
+          Data Science and lots n lots of more such fields</p>
+      </div>
+    </div>
+    <div class="col-lg-4 col-md-4 col-10 d-block m-auto mb-5">
+      <h2>And Much More</h2>
+      <a href="/portfolio" class="btn btn-primary">Go to my Portfoilio</a>
+    </div>
+
+
+    </div>
+  </section>
+
+  
+<!--Carousel Wrapper-->
+<div id="carousel-example-1z" class="carousel slide carousel-fade" data-ride="carousel" style="height: 100vh;">
+
+  <!--Indicators-->
+  <ol class="carousel-indicators">
+    <li data-target="#carousel-example-1z" data-slide-to="0" class="active"></li>
+    <li data-target="#carousel-example-1z" data-slide-to="1"></li>
+    <li data-target="#carousel-example-1z" data-slide-to="2"></li>
+  </ol>
+  <!--/.Indicators-->
+
+  <!--Slides-->
+  <div class="carousel-inner " role="listbox" style="height: 100vh;">
+
+    <!--First slide-->
+    <div class="carousel-item active" style="height: 100vh;">
+       <div class="view" style="background-image: url('{{baseurl}}/sample2.png'); background-repeat: no-repeat; background-size: cover;">
+
+
+        <!-- Mask & flexbox options-->
+        <div class="mask rgba-black-light d-flex justify-content-center align-items-center">
+
+         <!-- Content -->
+          <div class="text-center white-text mx-5 wow fadeIn mytext">
+             <h1 class="text-center mt-2 pt-2" style="text-align:center;font-family:Trattatello">With Us, Plan Your Home Today <br> @HousyWeb!</h1>
+
+           
+
+            <p class="mb-4  d-md-block">
+              <strong>The most comprehensive tutorial for the Bootstrap 4. Loved by over 500 000 users. Video and written versions
+                available. Create your own, stunning website.</strong>
+            </p>
+
+            
+          </div>
+          <!-- Content -->
+
+        </div>
+        <!-- Mask & flexbox options-->
+
+      </div>
+    </div>
+    <!--/First slide-->
+
+    <!--Second slide-->
+    <div class="carousel-item">
+       <div class="view" style="background-image: url('{{baseurl}}/sample3.png'); background-repeat: no-repeat; background-size: cover;">
+
+        <!-- Mask & flexbox options-->
+        <div class="mask rgba-black-light d-flex justify-content-center align-items-center">
+
+          <!-- Content -->
+          <div class="text-center white-text mx-5 wow fadeIn mytext">
+             <h1 class="text-center mt-2 pt-2" style="text-align:center;font-family:Trattatello">With Us, Plan Your Home Today <br> @HousyWeb!</h1>
+
+           
+
+            <p class="mb-4  d-md-block">
+              <strong>The most comprehensive tutorial for the Bootstrap 4. Loved by over 500 000 users. Video and written versions
+                available. Create your own, stunning website.</strong>
+            </p>
+
+            
+          </div>
+          <!-- Content -->
+
+        </div>
+        <!-- Mask & flexbox options-->
+
+      </div>
+    </div>
+    <!--/Second slide-->
+
+    <!--Third slide-->
+    <div class="carousel-item">
+     <div class="view" style="background-image: url('{{baseurl}}/sample4.png'); background-repeat: no-repeat; background-size: cover;">
+
+       
+      </div>
+    </div>
+    <!--/Third slide-->
+
+    <!--Third slide-->
+    <div class="carousel-item">
+      <div class="view" style="background-image: url('{{baseurl}}/sample5.png'); background-repeat: no-repeat; background-size: cover;">
+ 
+        
+       </div>
+     </div>
+     <!--/Third slide-->
+
+     <!--Third slide-->
+    <div class="carousel-item">
+      <div class="view" style="background-image: url('{{baseurl}}/sample6.png'); background-repeat: no-repeat; background-size: cover;">
+ 
+        
+       </div>
+     </div>
+     <!--/Third slide-->
+
+     <!--Third slide-->
+    <div class="carousel-item">
+      <div class="view" style="background-image: url('{{baseurl}}/sample7.png'); background-repeat: no-repeat; background-size: cover;">
+ 
+        
+       </div>
+     </div>
+     <!--/Third slide-->
+
+  </div>
+  <!--/.Slides-->
+
+  <!--Controls-->
+  <a class="carousel-control-prev" href="#carousel-example-1z" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carousel-example-1z" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+  <!--/.Controls-->
+
+</div>
+<!--/.Carousel Wrapper-->
+
+
+
+
+  <div class="container text-center mb-5">
+    <h1>My Experiences</h1>
+    <p>I had done some internship before you can check Credentials in Portfolio page </p>
+    <div class="row">
+      <div class="col-lg-4 col-md-4 col-10 d-block m-auto">
+        <figure class="figure">
+          <img src="{{baseurl}}/way2.png" class="img-fluid figure-img rounded-circle">
+          <figcaption>
+            <h4>Way2assignments</h4>
+            <p>Its a 30 days work from home Internship as Buisness Development intern its a great experience as it was
+              my first internship</p>
+          </figcaption>
+        </figure>
+      </div>
+      <div class="col-lg-4 col-md-4 col-10 d-block m-auto">
+        <figure class="figure">
+          <img src="{{baseurl}}/Start Up Inc.jpg" class="img-fluid figure-img rounded-circle">
+          <figcaption>
+            <h4>StartUp Inc</h4>
+            <p>Iti is also a 30 days work from home Internship as Front-end developer intern and its my second
+              internship and i learn a lot from this i am very greatful for their support.</p>
+          </figcaption>
+        </figure>
+      </div>
+      <div class="col-lg-4 col-md-4 col-10 d-block m-auto">
+        <figure class="figure">
+          <img src="{{baseurl}}/next.jpg" class="img-fluid figure-img rounded-circle">
+          <figcaption>
+            <h4>Wating for the next</h4>
+            <p>I am eagerly waiting for the next internship because i belive in skills and experience</p>
+          </figcaption>
+        </figure>
+      </div>
+    </div>
+  </div>
+
+{% endblock body %}
+

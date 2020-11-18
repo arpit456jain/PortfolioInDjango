@@ -1,0 +1,334 @@
+{% extends 'base.html' %}
+
+{% block title %} Portfolio{% endblock title %}
+
+
+{% block css %} 
+    .mypadding h2
+    {
+      margin-top: 3vh;
+    }
+{% endblock css %}
+
+{% block portfolioactive %}
+active
+{% endblock portfolioactive %}
+
+
+{% block body %}
+<section class="container text-center my-4 py-2">
+      <h1>SKILLS</h1> 
+      <p>These are the skills that i had gained in my first year of B.tech at Madan Mohan Malaviya University Of Technology , Gorakhpur </p>
+
+      <div class="row rowsetting mypadding">
+        <div class="col-lg-4 col-md-4 col-10 d-block m-auto">  
+          <div class="imgsetting d-block m-auto">
+           <img src="{{baseurl}}/C.png" class="img-fluid">      
+          </div>
+          <h2>C</h2>
+          <p>I work in C for a long time because of its processing speed and because of this  sometimes i hav code in C. I got 4 starts in c on <b>Hackerrank</b> but very soon it will be 5 stars.It is very efficient and fast that's why it is still in use</p>
+        </div>
+        <div class="col-lg-4 col-md-4 col-10 d-block m-auto">  
+          <div class="imgsetting d-block m-auto">
+           <img src="{{baseurl}}/C++.png" class="img-fluid">      
+          </div>
+          <h2>C++</h2>
+          <p>I just love this language after python because of its speed and in-built functions in <b>STL,VECTOR</b> and other things. I used C++ for almost 2 years when i don't know much about python. But still now most of the time i code in C++ when  python takes more time</p>
+        </div>
+        <div class="col-lg-4 col-md-4 col-10 d-block m-auto">  
+          <div class="imgsetting d-block m-auto">
+            <img src="{{baseurl}}/ds.png" class="img-fluid">      
+          </div>
+          <h2>Data Structures</h2>
+          <p>Its a vast area for me, till now i worked on <b>Array(1-D and 2-D), Singley Linked List , Stack and Queue  </b> i will go for tree and hashing very soon . At Hackerrank i have 4 stars in Problem Solving section and it will be 5 stars very soon.</p>
+        </div>
+        <div class="col-lg-4 col-md-4 col-10 d-block m-auto">  
+          <div class="imgsetting d-block m-auto">
+            <img src="{{baseurl}}/python.jpg" class="img-fluid">      
+          </div>
+          <h2>Python</h2>
+          <p>Its my favorite language for all (coding and Web Devlopment both). I always prefer python 1st for any coding question if it fails then i go for C++ . I got 5 stars on hackerrank and now i started learning Flask for going further in <br>Web D.
+          </p>
+        </div>
+
+        <div class="col-lg-4 col-md-4 col-10 d-block m-auto">  
+          <div class="imgsetting d-block m-auto">
+            <img src="{{baseurl}}/html.jpg" class="img-fluid">   
+          </div>
+          <h2>HTML</h2>
+          <p>We all know its the onr of most basic building block of Web Devlopment and i know it very well i am learning this things for past 1 year and i think i am pretty good in html</p>
+        </div>
+        <div class="col-lg-4 col-md-4 col-10 d-block m-auto">  
+          <div class="imgsetting d-block m-auto">
+            <img src="{{baseurl}}/css.png" class="img-fluid">      
+          </div>
+          <h2>CSS</h2>
+          <p>It looks so easy ,but its not. Css is fully dependent on experiance it takes a lot of time to understand it properly but still i am learning phase in CSS. Every day i find something new about it.</p>
+        </div>
+        <div class="col-lg-4 col-md-4 col-10 d-block m-auto">  
+          <div class="imgsetting d-block m-auto">
+             <img src="{{baseurl}}/js.png" class="img-fluid">       
+          </div>
+          <h2>JavaScript</h2>
+          <p>I am still beginner in JS but its a great tool and it makes work very easy. I have lots of ideas of projects on Js and i am working on it. Then i will go for some frameworks of Js.For now i ad made some small projects which i uploaded on Sololearn.</p>
+        </div>
+
+        <div class="col-lg-4 col-md-4 col-10 d-block m-auto">  
+          <div class="imgsetting d-block m-auto">
+             <img src="{{baseurl}}/bootstrap.png" class="img-fluid">       
+          </div>
+          <h2>Bootstrap</h2>
+          <p>It a great framework for me it makes work very easy for me,now i always use bootstrap in every template and projects to make it responsive in all Screen. It solve my biggest problem of responsive ness for which sometimes  i had to write a long code in Css</p>
+        </div>
+
+        <div class="col-lg-4 col-md-4 col-10 d-block m-auto">  
+          <div class="imgsetting d-block m-auto">
+             <img src="{{baseurl}}/mysql.png" class="img-fluid">       
+          </div>
+          <h2>My Sql</h2>
+          <p>It is the only language i know for database and i only know basics about it because i have not created any project on backend i am working on my skills for backend like php and flask but for now i dont't know very much about it.</p>
+        </div>
+
+      </div>
+    </section>
+
+
+   
+<!--Carousel Wrapper-->
+<div id="carousel-example-1z" class="carousel slide carousel-fade" data-ride="carousel" style="height: 100vh;">
+
+  <!--Indicators-->
+  <ol class="carousel-indicators">
+    <li data-target="#carousel-example-1z" data-slide-to="0" class="active"></li>
+    <li data-target="#carousel-example-1z" data-slide-to="1"></li>
+    <li data-target="#carousel-example-1z" data-slide-to="2"></li>
+  </ol>
+  <!--/.Indicators-->
+
+  <!--Slides-->
+  <div class="carousel-inner " role="listbox" style="height: 100vh;">
+
+    <!--First slide-->
+    <div class="carousel-item active" style="height: 100vh;">
+       <div class="view" style="background-image: url('{{baseurl}}/sample2.png'); background-repeat: no-repeat; background-size: cover;">
+
+
+        <!-- Mask & flexbox options-->
+        <div class="mask rgba-black-light d-flex justify-content-center align-items-center">
+
+         <!-- Content -->
+          <div class="text-center white-text mx-5 wow fadeIn mytext">
+             <h1 class="text-center mt-2 pt-2" style="text-align:center;font-family:Trattatello">With Us, Plan Your Home Today <br> @HousyWeb!</h1>
+
+           
+
+            <p class="mb-4  d-md-block">
+              <strong>The most comprehensive tutorial for the Bootstrap 4. Loved by over 500 000 users. Video and written versions
+                available. Create your own, stunning website.</strong>
+            </p>
+
+            
+          </div>
+          <!-- Content -->
+
+        </div>
+        <!-- Mask & flexbox options-->
+
+      </div>
+    </div>
+    <!--/First slide-->
+
+    <!--Second slide-->
+    <div class="carousel-item">
+       <div class="view" style="background-image: url('{{baseurl}}/sample3.png'); background-repeat: no-repeat; background-size: cover;">
+
+        <!-- Mask & flexbox options-->
+        <div class="mask rgba-black-light d-flex justify-content-center align-items-center">
+
+          <!-- Content -->
+          <div class="text-center white-text mx-5 wow fadeIn mytext">
+             <h1 class="text-center mt-2 pt-2" style="text-align:center;font-family:Trattatello">With Us, Plan Your Home Today <br> @HousyWeb!</h1>
+
+           
+
+            <p class="mb-4  d-md-block">
+              <strong>The most comprehensive tutorial for the Bootstrap 4. Loved by over 500 000 users. Video and written versions
+                available. Create your own, stunning website.</strong>
+            </p>
+
+            
+          </div>
+          <!-- Content -->
+
+        </div>
+        <!-- Mask & flexbox options-->
+
+      </div>
+    </div>
+    <!--/Second slide-->
+
+    <!--Third slide-->
+    <div class="carousel-item">
+     <div class="view" style="background-image: url('{{baseurl}}/sample4.png'); background-repeat: no-repeat; background-size: cover;">
+
+       
+      </div>
+    </div>
+    <!--/Third slide-->
+
+    <!--Third slide-->
+    <div class="carousel-item">
+      <div class="view" style="background-image: url('{{baseurl}}/sample5.png'); background-repeat: no-repeat; background-size: cover;">
+ 
+        
+       </div>
+     </div>
+     <!--/Third slide-->
+
+     <!--Third slide-->
+    <div class="carousel-item">
+      <div class="view" style="background-image: url('{{baseurl}}/sample6.png'); background-repeat: no-repeat; background-size: cover;">
+ 
+        
+       </div>
+     </div>
+     <!--/Third slide-->
+
+     <!--Third slide-->
+    <div class="carousel-item">
+      <div class="view" style="background-image: url('{{baseurl}}/sample7.png'); background-repeat: no-repeat; background-size: cover;">
+ 
+        
+       </div>
+     </div>
+     <!--/Third slide-->
+
+  </div>
+  <!--/.Slides-->
+
+  <!--Controls-->
+  <a class="carousel-control-prev" href="#carousel-example-1z" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carousel-example-1z" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+  <!--/.Controls-->
+
+</div>
+<!--/.Carousel Wrapper-->
+
+
+    	
+    
+
+    <div class="container text-center my-5">
+        <h1>My Experiences</h1>
+        <p>I had done some internship before </p>
+         <div class="row">
+          <div class="col-lg-4 col-md-4 col-10 d-block m-auto">
+            <figure class="figure">
+              <img src="{{baseurl}}/way2.png" class="img-fluid figure-img rounded-circle">
+              <figcaption>
+                <h4>Way2assignments</h4>
+                <p>Its a 30 days work from home Internship as Buisness Development intern its a great experience as it was my first internship.It was a great experience to do a official internship</p>
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#way2assignments">
+              View Certificate
+            </button>
+            <div class="modal fade" id="way2assignments" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel">Way2Assignments</h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                      <a href="img/way2certi.png" download="ARPIT JAIN">
+                      <img src="{{baseurl}}/way2certi.png" class="img-fluid figure-img" >
+                      </a>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              </figcaption>
+            </figure>
+          </div>
+          <div class="col-lg-4 col-md-4 col-10 d-block m-auto">
+            <figure class="figure">
+              <img src="{{baseurl}}/Start Up Inc.jpg" class="img-fluid figure-img rounded-circle" >
+              <figcaption>
+                <h4>StartUp Inc</h4>
+                <p>Iti is also a 30 days work from home Internship as Front-end developer intern  and its my second internship and i learn a lot from this i am very greatful for their support.</p>
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#StartUpInc">
+              View Certificate
+            </button>
+            <!-- Modal -->
+              <div class="modal fade" id="StartUpInc" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel">StartUpInc</h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                      <a href="img/Start Up Inc certi.png" download="ARPIT JAIN">
+                      <img src="{{baseurl}}/Start Up Inc certi.png" class="img-fluid figure-img" >
+                      </a>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              </figcaption>
+            </figure>
+          </div>
+          <div class="col-lg-4 col-md-4 col-10 d-block m-auto">
+            <figure class="figure">
+              <img src="{{baseurl}}/next.jpg" class="img-fluid figure-img rounded-circle" >
+              <figcaption>
+                <h4>Wating for the next</h4>
+                <p >I am eagerly waiting for the next internship because i belive in skills and experience the more i work, the more i became rich in experience </p>
+                 <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#resume">
+              View my Resume
+            </button>
+            <!-- Modal -->
+              <div class="modal fade" id="resume" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel">My Resume</h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                      <a href="img/resume.png" download>
+                      <img src="{{baseurl}}/resume.png" class="img-fluid figure-img" >
+                    </a>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+    </div>
+
+   
+
+{% endblock body %}
